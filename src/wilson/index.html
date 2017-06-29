@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="Wilson">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <base href="/wilson">
+    <link rel="stylesheet" href="http://bootswatch.com/sandstone/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+<body>
+
+    <ui-view></ui-view>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script>
+      const config = {
+        apiKey: "AIzaSyAHJ4rpRAYmvHPNS948Mwer7Y4V5LEm-1I",
+        authDomain: "wilson-ai-170022.firebaseapp.com",
+        databaseURL: "https://wilson-ai-170022.firebaseio.com",
+        projectId: "wilson-ai-170022",
+        storageBucket: "wilson-ai-170022.appspot.com",
+        messagingSenderId: "313642337496"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="components/wilson.component.js"></script>
+    <script src="components/heartRate.component.js"></script>
+    <script src="components/pedometer.component.js"></script>
+    <script src="components/systolic.component.js"></script>
+    <script src="components/diastolic.component.js"></script>
+    <script src="services/sensorData.service.js"></script>
+  </body>
+</html>

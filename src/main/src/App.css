@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  font-family: Arial;
+  background: linear-gradient(-90deg, #9f675a, grey);
+  color: #3b3b3d;
+  text-align: center;
+}
+
+.buffer {
+  height: 30vh;
+
+}
+
+.cap {
+  margin-top: 3vh;
+  height: 8vh;
+}
+
+.equalizer {
+  width: 190px;
+  height: 190px;
+  margin-top: -20px;
+  border: 14px solid #3b3b3d;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.equalizer:after {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  color: #3b3b3d;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+.equalizer.paused {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.equalizer.paused span {
+  height: 14px !important;
+}
+.equalizer.paused:after {
+}
+.equalizer span {
+  background-color: #3b3b3d;
+  width: 14px;
+  height: 0px;
+  bottom: 32px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  position: absolute;
+  -webkit-transition: height 0.2s linear;
+  transition: height 0.2s linear;
+}
+.equalizer span:nth-child(1) {
+  margin-left: -40px;
+}
+.equalizer span:nth-child(2) {
+  margin-left: -20px;
+}
+.equalizer span:nth-child(4) {
+  margin-left: 20px;
+}
+.equalizer span:nth-child(5) {
+  margin-left: 40px;
+}

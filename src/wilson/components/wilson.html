@@ -1,0 +1,57 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">The Wilson Companion</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/logout" ng-click="location.reload(true)">Logout</a></li>
+      <li><a ng-click="vm.meds()">Medication</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid top-out">
+  <div class="col-md-3 max-height">
+    <div class="container-fluid">
+      <div class="row side-piece">
+        <heart-rate heart-rate="vm.heartRate" ng-click="vm.showModal('heartRateModal', 'heartRateChart')"></heart-rate>
+      </div>
+      <br>
+      <div class="row side-piece">
+        <pedometer pedometer="vm.pedometer" ng-click="vm.showModal('heartRateModal', 'pedometer')"></pedometer>
+      </div>
+      <br>
+      <div class="row side-piece">
+        <systolic systolic="vm.systolic" ng-click="vm.showModal('heartRateModal', 'systolic')"></systolic>
+      </div>
+      <br>
+      <div class="row side-piece">
+        <diastolic diastolic="vm.diastolic" ng-click="vm.showModal('heartRateModal', 'diastolic')"></diastolic>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9 max-height">
+    <div class="center center-me">
+      <div class="equalizer">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+      <div class="">
+        <button id="start_button">START/STOP</button>
+        <div>
+          {{vm.finalTranscript}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="heartRateModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <canvas id="heartRateChart" width="150" height="150"></canvas>
+    </div>
+  </div>
+</div>

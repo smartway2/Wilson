@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#register">Register</a></li>
+          <li data-toggle="tooltip" data-placement="right" title="Coming Soon!"><a>Physician Portal</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="parallax z row">
+        <div class="row space">
+
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-4">
+            <h1 class="title">The Wilson Companion A.I.</h1>
+            <div class="row greyback">
+              <br>
+              <div class="container-fluid">
+                <div class="card">
+                  <div class="container-fluid">
+                    <br>
+                    <div class="center-text dark-text">
+                      <h2>A True Companion.</h2>
+                    </div>
+                    <br>
+                    <div class="center-text">
+                      <button type="button" class="btn btn-default active">Primary Sign-in</button>
+                      <button type="button" class="btn btn-default disabled" data-toggle="tooltip" data-placement="right" title="Coming Soon!">Sign in as Caretaker</button>
+                    </div>
+                    <div class="center-text-50">
+                      <br>
+                      <div class="center">
+                        <form id="prime" class="sign-in">
+                          <input type="email" name="email" class="form-control" placeholder="email"><br>
+                          <input type="password" name="password" class="form-control" placeholder="password"><br>
+                          <input type="submit" name="submit" class="btn btn-default"value="Sign In">
+                        </form>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="center-text">
+                      <a href="/auth/facebook/login"><img class="icon" src="../images/Facebook-icon.png" alt="fbsignin"></a> &nbsp &nbsp<a href="/auth/google/login"><img class="icon" src="../images/gplusBlue.png" alt="gpsignin"></a>
+                    </div>
+                    <br>
+                    <div class="center-text">
+                      <a href="#register">New User? Sign Up!</a> | <a data-toggle="tooltip" data-placement="right" title="Coming Soon!">Physician Portal</a> <br> <a href="#">Forgot Password?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="parallax zz row">
+        <div class="asd">
+          <div id="carousel-example-generic" class="carousel slide asd" data-ride="carousel">
+            Indicators
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            Wrapper for slides
+            <div class="carousel-inner asd" role="listbox">
+              <div class="item active center-text item1 asd">
+                <div class="carousel-caption">
+                  <h1 class="dark-text">Get up to date sensor data</h1>
+                </div>
+              </div>
+              <div class="item center-text item2 asd">
+
+                <div class="carousel-caption">
+                  <h1 class="dark-text">Interact with the wilson companion interface!</h1>
+                </div>
+              </div>
+            </div>
+
+            Controls
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <div class="parallax zzz row">
+        <a name="register"></a>
+        <br><br><br>
+        <div class="row greyback">
+          <br>
+          <div class="container-fluid">
+            <div class="card y-over">
+              <div class="container-fluid">
+                <br>
+                <h1>Register</h1>
+                <form id="#register" class="" action="" method="post">
+                  First Name*<input class="form-control" type="text" name="first_name" placeholder="First Name" required>
+                  <br>Middle Name<input class="form-control" type="text" name="middle_name" placeholder="Middle Name"><br>
+                  Last Name*<input class="form-control" type="text" name="last_name" placeholder="Last Name" required><br>
+                  Password*<input class="form-control" type="text" name="password" placeholder="Password" required><br>
+                  Street Address*<input class="form-control" type="text" name="street_address" placeholder="Street Address" required><br>
+                  Country*<input class="form-control" type="text" name="country" placeholder="Country" required><br>
+                  State*<input class="form-control" type="text" name="state" placeholder="State" required><br>
+                  Zip Code*<input class="form-control" type="number" name="postal_code" placeholder="Zip Code" required><br>
+                  Birthdate*<input class="form-control" type="text" name="birthdate" placeholder="Birthdate" required><br>
+                  Email*<input class="form-control" type="email" name="email" placeholder="Email" required><br>
+                  Primary Phone*<input class="form-control" type="phone" name="primary_phone" placeholder="Primary Phone" required><br>
+                  Recovery Question*<input class="form-control" type="text" name="recovery_question" placeholder="Recovery Question" required><br>
+                  Recovery Answer*<input class="form-control" type="text" name="recovery_answer" placeholder="Recovery Answer" required><br>
+                  <input type="submit" class="btn btn-success" value="REGISTER">
+                </form>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <link rel="stylesheet" href="main.css">
+    <script src="./home.js"></script>
+  </body>
+</html>

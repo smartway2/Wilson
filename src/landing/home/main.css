@@ -1,0 +1,83 @@
+.y-over {
+  overflow-y: scroll;
+}
+.parallax {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.item1 {
+  background-image: url('../images/screen1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url('../images/screen2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.z {
+  background-image: url('../images/adventure-1807524.jpg');
+  height: 93vh;
+}
+.zz {
+  background-image: url('../images/medical-563427.jpg');
+  height: 60vh;
+}
+.zzz {
+  background-image: url('../images/chain-1742948.jpg');
+  height: 92vh;
+}
+.asd {
+  height: 100%;
+}
+.space {
+  height: 5vh;
+}
+
+h1.title {
+  font-size: 5.5rem;
+  color: white;
+  font-family: slabo;
+}
+
+.greyback {
+  border: 5px solid white;
+  height: 63vh;
+  color: white;
+}
+
+.card {
+  height: 56vh;
+  background-color: white;
+  color: darkgrey;
+}
+
+.center-text-50 {
+  text-align: center;
+  width: 50%;
+  margin: 0px auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.dark-text {
+  color: darkgrey;
+}
+
+h2 {
+  font-family: slabo;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
